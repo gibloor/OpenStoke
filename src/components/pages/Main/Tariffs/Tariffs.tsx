@@ -111,7 +111,7 @@ const Tariffs = () => {
           </span>
         </div>
 
-        <Link className='tariffs__hint_link' to=''>
+        <Link className='tariffs__hint_link' to='./'>
           Request Icon
         </Link>
       </div>

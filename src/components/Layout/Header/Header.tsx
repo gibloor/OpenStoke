@@ -18,14 +18,14 @@ const Header = () => {
   return (
     <div className='header extended-container'>
       <div className='header__section'>
-        <Link to='' className='header__icons'>
+        <Link to='./' className='header__icons'>
           <img alt='loupe' src={loupe} className='header__loupe' />
           <span>
             ICONS
           </span>
         </Link>
 
-        <Link to='' className='header__link'>
+        <Link to='./' className='header__link'>
           STYLES
         </Link>
       </div>
@@ -34,18 +34,18 @@ const Header = () => {
 
       <div className='header__section header__left-section'>
         {!user.name && (
-          <Link to='' className='header__link'>
+          <Link to='./' className='header__link'>
             PRICING
           </Link>
         )}
 
-        <Link to='' className='header__link'>
+        <Link to='./' className='header__link'>
           LOGIN
         </Link>
 
         {user.name && (
           <>
-            <Link to='' className='header__link'>
+            <Link to='./' className='header__link'>
               {((i18next.header as I18NEXT).plan as I18NEXT)[user.plan] as string}
             </Link>
             

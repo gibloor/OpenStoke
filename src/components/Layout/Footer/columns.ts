@@ -2,45 +2,45 @@ const columns = [
   [
     {
       text: 'Pricing',
-      link: ''
+      link: './'
     },
     {
       text: 'FAQs',
-      link: ''
+      link: './'
     },
     {
       text: 'Icon Request',
-      link: ''
+      link: './'
     },
     {
       text: 'Report Icon',
-      link: ''
+      link: './'
     },
     {
       text: 'Contact Us',
-      link: ''
+      link: './'
     },
   ],
   [
     {
       text: 'Dribble',
-      link: ''
+      link: './'
     },
     {
       text: 'LinkedIn',
-      link: ''
+      link: './'
     },
     {
       text: 'Twitter',
-      link: ''
+      link: './'
     },
     {
       text: 'Terms of Use',
-      link: ''
+      link: './'
     },
     {
       text: 'Privacy Policy',
-      link: ''
+      link: './'
     },
   ],
 ]
