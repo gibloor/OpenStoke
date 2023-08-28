@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/OpenStoke/static/css/main.08376dfa.css",
-    "main.js": "/OpenStoke/static/js/main.f035a6b9.js",
+    "main.js": "/OpenStoke/static/js/main.b8f29c5f.js",
     "static/media/screenshot.png": "/OpenStoke/static/media/screenshot.c9adbfcdb92b2f05cea8.png",
     "static/media/openStroke.svg": "/OpenStoke/static/media/openStroke.1300341b369bd3a4a0586a702996dd29.svg",
     "static/media/rocket.svg": "/OpenStoke/static/media/rocket.2da499008e37d7053cc2b95073ddd853.svg",
@@ -25,10 +25,10 @@
     "static/media/choosed.svg": "/OpenStoke/static/media/choosed.73d264740799713b3a86bdd0051b00ac.svg",
     "static/media/arrow.svg": "/OpenStoke/static/media/arrow.0e4de2717e8545be55a0b562d6562f45.svg",
     "main.08376dfa.css.map": "/OpenStoke/static/css/main.08376dfa.css.map",
-    "main.f035a6b9.js.map": "/OpenStoke/static/js/main.f035a6b9.js.map"
+    "main.b8f29c5f.js.map": "/OpenStoke/static/js/main.b8f29c5f.js.map"
   },
   "entrypoints": [
     "static/css/main.08376dfa.css",
-    "static/js/main.f035a6b9.js"
+    "static/js/main.b8f29c5f.js"
   ]
 }
