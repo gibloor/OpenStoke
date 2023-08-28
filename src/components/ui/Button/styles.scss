@@ -1,0 +1,36 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: calc(1rem - 3px) 2rem;
+  border: 2px solid #676F7E;
+  border-radius: 10px;
+  font-weight: 800;
+  font-size: 0.9375rem;
+  box-shadow: 0px 1px 0px 0px #FFFFFF inset, 0px 2px 0px 0px #00000033;
+  box-sizing:border-box;
+
+  &__filled-light {
+    background-color: #FAD338;
+    border-color: #1E3050;
+  }
+
+  &__filled-dark {
+    background-color: #FAC438;
+    border-color: #1E3050;
+  }
+
+  &__unfilled-light {
+    background-color: #ffffff;
+    border-color: #676F7E;
+  }
+
+  &__unfilled-dark {
+    background-color: #F0F3F5;
+    border-color: #1E3050;
+  }
+
+  &__choosed {
+    border-color: #C5CAD3;
+  }
+}

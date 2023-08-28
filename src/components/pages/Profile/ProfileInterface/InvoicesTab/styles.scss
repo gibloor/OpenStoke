@@ -1,0 +1,22 @@
+.invoice-tab {
+
+  &__table_plan {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    flex: 1;
+  }
+
+  &__status_container {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    flex: 1;
+  }
+
+  &__status_refund {
+    padding: 0.625rem 0.9375rem;
+    border: 1px solid #C5CAD3;
+    border-radius: 8px;
+  }
+}

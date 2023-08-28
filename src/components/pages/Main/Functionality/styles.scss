@@ -1,0 +1,104 @@
+.functionality {
+  display: flex;
+  flex-direction: column;
+  gap: 3.125rem;
+  align-items: center;
+
+  &__title {
+    display: block;
+    padding-top: 3.125rem;
+    font-weight: 800;
+    color: #1E3050;
+  }
+
+  &__table {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 3.125rem;
+  }
+
+  &__table_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem 3.75rem;
+    width: 18.125rem;
+    position: relative;
+  }
+
+  &__table_section_picture {
+    margin-bottom: 1.25rem;
+  }
+
+  &__table_section_title {
+    color:#1E3050;
+    font-weight: 800;
+    line-height: 1.25rem;
+    margin-bottom: 0.625rem;
+  }
+
+  &__table_section_text {
+    text-align: center;
+  }
+
+  &__table_section:nth-child(2)::before,
+  &__table_section:nth-child(5)::before,
+  &__table_section:nth-child(8)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-left: 1px solid #C5CAD3;
+    border-right: 1px solid #C5CAD3;
+    height: calc(100% - 5rem);
+    pointer-events: none;
+    transform: translateY(2.5rem);
+  }
+}
+
+
+
+@media screen and (max-width: 1260px) {
+  .functionality {
+    &__table {
+      justify-content: center;
+    }
+
+    &__table_section:nth-child(2)::before,
+    &__table_section:nth-child(5)::before,
+    &__table_section:nth-child(8)::before {
+      border-left: none;
+      border-right: none;
+    }
+
+    &__table_section:nth-child(1)::before,
+    &__table_section:nth-child(3)::before,
+    &__table_section:nth-child(5)::before,
+    &__table_section:nth-child(7)::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-right: 1px solid #C5CAD3;
+      height: calc(100% - 5rem);
+      pointer-events: none;
+      transform: translateY(2.5rem);
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .functionality {
+    &__table_section:nth-child(1)::before,
+    &__table_section:nth-child(3)::before,
+    &__table_section:nth-child(5)::before,
+    &__table_section:nth-child(7)::before {
+      border-left: none;
+      border-right: none;
+    }
+  }
+}

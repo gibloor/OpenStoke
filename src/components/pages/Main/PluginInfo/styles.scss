@@ -1,0 +1,60 @@
+.plugin-info {
+  &__container {
+    display: flex;
+    justify-content: center;
+    gap: 6.25rem;
+    height: 31.25rem;
+    background-color: #8855FF;
+    border-radius: 20px;
+    align-items: flex-end;
+    margin-bottom: 6.25rem;
+  }
+
+  &__picture {
+    height: 28.75rem;
+  }
+
+  &__intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3.125rem;
+    height: 100%;
+    width: 23rem;
+    color: #fff;
+  }
+
+  &__example {
+    height: 3rem;
+  }
+
+  &__intro_description {
+    display: flex;
+    flex-direction: column;
+    gap: 0.33rem;
+  }
+
+  &__intro_title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    line-height: 2rem;
+  }
+
+  &__intro_text {
+    line-height: 1.25rem;
+  }
+}
+
+
+@media screen and (max-width: 1260px) {
+  .plugin-info {
+    &__container {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      gap: 3.125rem;
+      padding: 2.5rem 0;
+    }
+  }
+}
