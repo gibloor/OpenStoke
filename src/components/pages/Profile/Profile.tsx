@@ -32,7 +32,7 @@ const Profile = () => {
               {user.name.split(' ').map(word => word.charAt(0).toUpperCase()).join('')}
             </div>
 
-            <img src={pencil} />
+            <img alt='pencil' src={pencil} />
           </div>
 
           <div className='profile__short-info_text'>
@@ -62,7 +62,7 @@ const Profile = () => {
                 <span className='profile__short-info_value'>
                   {user.position}
                 </span>
-                <img src={pencil} />
+                <img alt='pencil' src={pencil} />
               </div>
             </div>
             
@@ -124,7 +124,7 @@ const Profile = () => {
             <span className='profile__upgrade_text'>
               Upgrade to Advance
             </span>
-            <img src={rocket} />
+            <img alt='rocket' src={rocket} />
           </div>
         </div>
       </div>

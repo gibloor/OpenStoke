@@ -43,12 +43,12 @@ const Tariffs = () => {
                 </span>
               </div>
 
-              <img src={`assets/main/tariffs/${tariff.name}.svg`} />
+              <img alt='tariff' src={`assets/main/tariffs/${tariff.name}.svg`} />
             </div>
 
             <ul className='tariffs__features'>
               {tariff.features.map(feature => (
-                <li>
+                <li key={feature}>
                   {feature}
                 </li>
               ))}
@@ -104,7 +104,7 @@ const Tariffs = () => {
 
       <div className='tariffs__hint'>
         <div className='tariffs__hint_block'>
-          <img src={hint} />
+          <img alt='hint' src={hint} />
 
           <span className='tariffs__hint_text'>
             Can’t find the right icon? No worries, just place the request and we’ll add it in like no time.

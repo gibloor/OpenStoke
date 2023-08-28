@@ -14,8 +14,9 @@ const Functionality = () => {
 
       <div className='functionality__table'>
         {functionalities.map(functionality => (
-          <div className='functionality__table_section'>
+          <div key={functionality.name} className='functionality__table_section'>
             <img
+              alt='section'
               src={`/assets/main/functionality/${functionality.name}.svg`}
               className='functionality__table_section_picture'
             />

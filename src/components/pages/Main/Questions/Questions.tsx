@@ -15,7 +15,7 @@ const Questions = () => {
 
       <div>
         {questions.map(question => (
-          <div className='questions__question'>
+          <div key={question.question} className='questions__question'>
             <span className='questions__text'>
               {question.question}
             </span>

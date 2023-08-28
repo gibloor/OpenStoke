@@ -19,7 +19,7 @@ const Button = (props: ButtonProps) => {
       onClick={props.onClick}
       className={`button button__${props.style} ${props.choosed ? 'button__choosed' : ''} ${props.className}`}
     >
-      {props.choosed ? <img src={choosed} /> : props.text}
+      {props.choosed ? <img alt='choosed' src={choosed} /> : props.text}
     </button>
   )
 }

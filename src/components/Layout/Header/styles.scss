@@ -38,5 +38,22 @@
     border-radius: 100px;
     background-color: #FAD338;
   }
+
+  &__drop-down-menu {
+    display: none;
+    cursor: pointer;
+  }
 }
 
+
+@media screen and (max-width: 1000px) {
+  .header {
+    &__drop-down-menu {
+      display: block;
+    }
+
+    &__link {
+      display: none;
+    }
+  }
+}

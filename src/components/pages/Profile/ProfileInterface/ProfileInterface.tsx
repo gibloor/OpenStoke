@@ -44,7 +44,7 @@ const ProfileInterface = () => {
           onClick={() => setActiveTab('history')}
           className={`profile-interface__section ${activeTab === 'history' ? 'profile-interface__active-section': ''}`}
         >
-          <img src={activeTab === 'history' ? historyActive : history} />
+          <img alt='history' src={activeTab === 'history' ? historyActive : history} />
           <span>
             History
           </span>
@@ -54,7 +54,7 @@ const ProfileInterface = () => {
           onClick={() => setActiveTab('invoices')}
           className={`profile-interface__section ${activeTab === 'invoices' ? 'profile-interface__active-section': ''}`}
         >
-          <img src={activeTab === 'invoices' ? invoicesActive : invoices} />
+          <img alt='invoices' src={activeTab === 'invoices' ? invoicesActive : invoices} />
           <span>
             Invoices
           </span>
@@ -64,7 +64,7 @@ const ProfileInterface = () => {
           onClick={() => setActiveTab('settings')}
           className={`profile-interface__section ${activeTab === 'settings' ? 'profile-interface__active-section': ''}`}
         >
-          <img src={activeTab === 'settings' ? settingsActive : settings} />
+          <img alt='settings' src={activeTab === 'settings' ? settingsActive : settings} />
           <span>
             Settings
           </span>
@@ -97,7 +97,7 @@ const ProfileInterface = () => {
                     {index + 1}
                   </div>
                 ) : index + 4 === openTabs || index - 4 === openTabs ? (
-                  <span className='profile-interface__three-dots'>
+                  <span key={index} className='profile-interface__three-dots'>
                     ...
                   </span>
                 ) : null
@@ -108,7 +108,7 @@ const ProfileInterface = () => {
                   Next
                 </span>
 
-                <img src={arrow} />
+                <img alt='arrow' src={arrow} />
               </div>
             </div>
 

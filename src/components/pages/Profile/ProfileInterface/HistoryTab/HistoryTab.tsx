@@ -31,12 +31,12 @@ const HistoryTab = (props: HistoryTabProps) => {
       </div>
 
       {user.history.map((element, index) => index >= openTabs * 10 && index < openTabs * 10 + 10 ? (
-        <div className='profile-interface__table_row'>
+        <div key={index} className='profile-interface__table_row'>
           <span className='profile-interface__table_date'>
             {element.date.getDate()} {months[element.date.getMonth()]}, {element.date.getFullYear()}
           </span>
           <div className='profile-interface__table_item'>
-            <img src={`assets/pictures/${element.item}`} />
+            <img alt='item' src={`assets/pictures/${element.item}`} />
             <span>
               {element.item}
             </span>
@@ -48,7 +48,7 @@ const HistoryTab = (props: HistoryTabProps) => {
             <span>
               {items.find(item => item.name === element.item)?.royaltyFree}
             </span>
-            <img src={dots} />
+            <img alt='dots' src={dots} />
           </div>
         </div>
       ) : null)}

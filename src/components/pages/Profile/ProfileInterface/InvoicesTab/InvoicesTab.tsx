@@ -34,7 +34,7 @@ const InvoicesTab = (props: InvoicesTabProps) => {
       </div>
 
       {user.invoices.map((element, index) => index >= openTabs * 10 && index < openTabs * 10 + 10 ? (
-        <div className='profile-interface__table_row'>
+        <div key={index} className='profile-interface__table_row'>
           <span className='profile-interface__table_date'>
             {element.date.getDate()} {months[element.date.getMonth()]}, {element.date.getFullYear()}
           </span>
@@ -47,7 +47,7 @@ const InvoicesTab = (props: InvoicesTabProps) => {
           </span>
           <div className='profile-interface__table_royalty'>
             <div className='invoice-tab__status_container'>
-              <img src={paid} />
+              <img alt='paid' src={paid} />
               <span>
                 {element.status}
               </span>
@@ -57,7 +57,7 @@ const InvoicesTab = (props: InvoicesTabProps) => {
                 </span>
               )}
             </div>
-            <img src={dots} />
+            <img alt='dots' src={dots} />
           </div>
         </div>
       ) : null)}

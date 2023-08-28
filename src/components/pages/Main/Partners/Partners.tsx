@@ -13,7 +13,7 @@ const Partners = () => {
 
       <div className='partners__container'>
         {partners.map(partner => (
-          <img src={`assets/main/partners/${partner}.png`} />
+          <img alt={`partner ${partner}`} key={partner} src={`assets/main/partners/${partner}.png`} />
         ))}
       </div>
     </div>

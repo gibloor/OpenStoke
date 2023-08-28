@@ -16,6 +16,7 @@ const Footer = () => {
       <div className='footer__block'>
         <div className='footer__description'>
           <img
+            alt='open stroke'
             src={openStroke}
             className='footer__description_picture'
           />
@@ -25,10 +26,10 @@ const Footer = () => {
         </div>
 
         <div  className='footer__columns'>
-          {columns.map(column => (
-            <div className='footer__column'>
+          {columns.map((column, index) => (
+            <div key={index} className='footer__column'>
               {column.map(link => (
-                <Link to={link.link}>
+                <Link to={link.link} key={link.text}>
                   {link.text}
                 </Link>
               ))}
@@ -43,14 +44,14 @@ const Footer = () => {
         </span>
 
         <span className='footer__made-with'>
-          Made with <img src={heart} /> in India.
+          Made with <img alt='heart' src={heart} /> in India.
         </span>
 
         <div className='footer__secure-payment'>
           <span>
             Secure payment with
           </span>
-          <img src={stripe} />
+          <img alt='stripe' src={stripe} />
         </div>
       </div>
     </div>

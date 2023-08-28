@@ -37,8 +37,9 @@ const SubscriptionInfo = () => {
 
       <div className='subscription-info__slides'>
         {slides.map(slide => (
-          <div className='subscription-info__slide'>
+          <div key={slide.name} className='subscription-info__slide'>
             <img
+              alt='subscription'
               src={`assets/main/subscriptionInfo/${slide.name}.svg`}
               className='subscription-info__slide_picture'
             />
