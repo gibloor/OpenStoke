@@ -15,6 +15,7 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Main />} />
             <Route path='profile' element={<Profile />} />
+            <Route path='*' element={<Main />} />
           </Route>
         </Routes>
       </BrowserRouter>

@@ -50,6 +50,10 @@
     color: #1E3050;
   }
 
+  &__pencil {
+    cursor: pointer;
+  }
+
   &__short-info_text {
     display: flex;
     flex-direction: column;
@@ -133,6 +137,7 @@
     align-items: center;
     gap: 0.625rem;
     margin: 1.625rem 0;
+    cursor: pointer;
   }
 
   &__upgrade_text {
