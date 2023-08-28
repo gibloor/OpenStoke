@@ -2,7 +2,7 @@
   "name": "openstoke",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gibloor.github.io",
+  "homepage": "https://gibloor.github.io/OpenStoke/",
   "dependencies": {
     "react": "^18.2.0",
     "react-circular-progressbar": "^2.1.0",
